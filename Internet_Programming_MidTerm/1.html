@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            중간고사 1번
+        </title>
+        <style>
+            *{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var tmp = prompt("출력하려는 삼각형의 층수를 입력하세요.","");
+            for(var i = tmp;i>=0;i--){
+                for(var j = 0;j<i;j++){
+                    document.write("----");
+                }
+                document.write("<br>");
+            }
+            for(var i = 0;i<=tmp;i++){
+                for(var j = 0;j<i;j++){
+                    document.write("----");
+                }
+                document.write("<br>");
+            }
+        </script>
+    </body>
+</html>

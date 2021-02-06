@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            var i = 2;
+            function addon(){
+                var tmp = document.getElementById("tbd");
+                tmp.innerHTML += "<tr><th>row " + i + ", cell 1</th><th>row " + i + ", cell 2</th></tr>";
+                i++;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input type="button" value="add_new_row" onclick="addon()">
+        <input type="button" value="add_new_col">
+        <table border="1">
+            <thead style="background-color: green;">
+                <tr><th>Header1</th><th>Header2</th></tr>
+            </thead>
+            <tbody id="tbd">
+                <tr><th>row 1, cell 1</th><th>row 1, cell 2</th></tr>
+            </tbody>
+            <tfoot>
+                
+            </tfoot>
+        </table>
+    </body>
+</html>

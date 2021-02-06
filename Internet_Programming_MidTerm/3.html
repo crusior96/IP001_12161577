@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            중간고사 3번
+        </title>
+        <script>
+            var tm = document.getElementById("whattime");
+            var tm2 = new Date();
+            tm.value=tm2.getUTCDate;
+            function addon(){
+                var tmp = document.getElementById("oioi");
+                var tmp2 = prompt("중간고사 시험 시 유의사항을 입력하세요.","");
+                tmp.innerHTML += "<li>" + tmp2 + "</li>";
+            }
+        </script>
+    </head>
+    <body>
+        <h3>시간을 보여주는 영역입니다.</h3>
+        시계를 클릭하면 시계가 멈추고 다시 클릭하면 가기 시작합니다.
+        <hr>
+        <<input type="time" id="whattime">>
+        <hr>
+        <h3>중간고사 유의사항</h3>
+        <hr>
+        <ol type="A" id="oioi" onclick="addon()" style="background-color: yellowgreen;">
+            <li>결과물은 1.html 2.html 3.html 파일을 elearning 시스템의 중간고사 제출 항목에 제출.</li>
+        </ol>
+    </body>
+</html>
