@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Prompt 사용해보기</title>
+    
+</head>
+<body>
+<h3>Prompt 사용해보기</h3>
+<hr>
+<script>
+        var ret = prompt("이름을 입력하세요", "황기태");
+        if(ret == null) { 
+            javascript:alert('취소했습니다.');
+        }
+        else if(ret == "") {
+            javascript:alert('공백이어선 안됩니다.');
+        }
+        else {
+            javascript:alert(ret + ' 입력완료');
+        }
+</script>
+</body>
+</html>
