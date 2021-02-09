@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>퀴즈 3</title>
+        <script>
+            function evalNum(){
+                var N = prompt("100 미만의 정수만 입력", 0);
+            N = parseInt(N);
+            if(N>100){
+                alert("정수 " + N + ", 은 100보다 작지 않습니다.");
+            }
+            else if(N<=100){
+                var ans = (1 + N) * N / 2;
+                alert(ans);
+            }
+            }            
+        </script>
+    </head>
+    <body>
+        <script>
+            evalNum();
+        </script>
+    </body>
+</html>
