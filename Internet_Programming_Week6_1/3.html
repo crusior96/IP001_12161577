@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            메뉴 선택하기
+        </title>
+        <script>
+            function checkmenus(){
+                var checkmenu = document.getElementById("menus");
+                var checker = 0;
+                for(var i = 0;i<checkmenu.length;i++){
+                    if(checkmenu[i].checked){
+                        checker++;
+                    }
+                }
+
+                if(checker==0){
+                    document.write("최소한 1개 이상 주문해주세요");
+                }
+                else{
+                    for(var i = 0;i<checkmenu.length;i++){
+                        if(checkmenu[i].checked){
+                            checker--;
+                            if(checker==0){
+                                document.write(checkmenu[i].value);
+                            }
+                            else{
+                                document.write(checkmenu[i].value);
+                                document.write(", ");
+                            }                           
+                        }
+                    }
+                    document.write("을(를) 주문하였습니다.");
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h3>메뉴를 선택하세요</h3>
+        <form id = "menus">
+            <input type = "checkbox" name = "menu1" value="짜장면">
+            <label for="menu1">짜장면</label><br>
+            <input type = "checkbox" name = "menu2" value="짬뽕">
+            <label for="menu2">짬뽕</label><br>
+            <input type = "checkbox" name = "menu3" value="탕수육">
+            <label for="menu3">탕수육</label><br>
+        </form>
+        <div>
+            <input type="button" onclick="checkmenus()" value="주문완료">
+        </div>
+
+       
+    </body>
+</html>
