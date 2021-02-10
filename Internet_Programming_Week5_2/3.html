@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+            function addNum(){
+               var a = document.getElementById("num1").value;
+               var b = document.getElementById("num2").value;
+               a = parseInt(a);
+               b = parseInt(b);
+               var c = a+b;
+               document.getElementById("tot").value = (c);
+            }
+        </script>
+    </head>
+    <body>
+        <h3>덧셈 계산기</h3>
+        <hr>
+        <form>
+            첫번째 정수 : <input type="text" id="num1" size="5">
+            <br>
+            두번째 정수 : <input type="text" id="num2" size="5">
+            <br>
+            합계 : <input type = "text" id="tot" size="5">
+            <br>
+            <input type="button" id="addit" value="계산" onclick="addNum()">
+        </form>
+    </body>
+</html>

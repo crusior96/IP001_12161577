@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>방문 시간 체크하기</title>
+    </head>
+    <body>
+        <h3>오전이면 lightskyblue, 오후이면 orange 배경</h3>
+        <hr>
+        <script>
+            var now_time = new Date();
+            if(now_time.getHours()<12){
+                document.body.style.backgroundColor = "lightskyblue";
+            }
+            else if(now_time.getHours()>=12){
+                document.body.style.backgroundColor = "orange";
+            }
+        
+            document.write("현재 시간 : ");
+            document.write(now_time.getHours(),"시,");
+            document.write(now_time.getMinutes(),"분,");
+            document.write(now_time.getSeconds(),"초<br>");
+        </script>
+
+    </body>
+</html>

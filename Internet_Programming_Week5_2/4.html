@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>덧셈 계산 게임</title>
+        <script>
+            var num1 = Math.floor(Math.random()*100);
+            num1 = parseInt(num1);
+            var num2 = Math.floor(Math.random()*100);
+            num2 = parseInt(num2);
+            var real_answer = num1 + num2;
+            
+            guess_answer = parseInt(guess_answer);
+            function writeit(){
+                document.write(num1 + "+" + num2 + "=<br>");
+            }
+            function evaluation(){
+                var guess_answer = document.getElementById("answer").value;
+                if(real_answer==guess_answer){
+                    alert("정답입니다!");
+                }
+                else if(real_answer!=guess_answer){
+                    alert("오답입니다!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>덧셈 계산하시고, 결과를 입력받고 확인 버튼을 클릭하여 정확한지 확인해 보세요.</h3>
+        <hr>
+        <form>
+            <script>
+                writeit();
+            </script>
+            덧셈 결과 : <input type="text" id="answer" size="5">
+            <input type="button" id="checkit" value="결과 확인" onclick="evaluation()">
+        </form>
+    </body>
+</html>
